@@ -31,6 +31,8 @@ Feature request? Check the past discussions to see if it has been brought up pre
 - [irvin.dev](https://www.irvin.dev/) - Irvin Lin's personal site. Added YouTube embedding.
 - [KirillSo.com](https://www.kirillso.com/) - Personal blog & website.
 - [ghali.dev](https://ghali.dev) - Cyril's Blog
+- [the all JavaScript Blog](https://the-all-javascript-blog.vercel.app/) - a JavaScript enlightenment blog uses this
+- [KirillSo.com](https://www.kirillso.com/) - Personal blog & website.
 - [DevBoy Blog](https://devboy.vercel.app/) - M.Reza's personal blog
 - [slightlysharpe.com](https://slightlysharpe.com) - [Tincre's](https://tincre.com) main company blog
 - [blog.b00st.com](https://blog.b00st.com) - [b00st.com's](https://b00st.com) main music promotion blog
@@ -129,6 +131,12 @@ or JS (official support)
 npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
 ```
 
+or with TypeScript (community support)
+
+```bash
+npx degit timlrx/tailwind-nextjs-starter-blog#typescript
+```
+
 2. Personalize `siteMetadata.js` (site related information)
 3. Modify the content security policy in `next.config.js` if you want to use
    any analytics provider or a commenting solution other than giscus.
@@ -198,7 +206,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 Frontmatter follows [Hugo's standards](https://gohugo.io/content-management/front-matter/).
 
-Currently 7 fields are supported.
+Currently 10 fields are supported.
 
 ```
 title (required)
