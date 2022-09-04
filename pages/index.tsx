@@ -8,8 +8,6 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
 
-import NewsletterForm from '@/components/NewsletterForm'
-
 const MAX_DISPLAY = 5
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
@@ -92,11 +90,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           >
             All Posts &rarr;
           </Link>
-        </div>
-      )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
         </div>
       )}
     </>
